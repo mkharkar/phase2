@@ -1,0 +1,30 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: fit-content;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+}
+.card-title:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 0.5em;
+    border-bottom: 1px solid black;
+}
+.card-cta{
+    background-color: #101731;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
