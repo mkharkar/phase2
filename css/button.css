@@ -1,0 +1,20 @@
+.prim-btn{
+    background-color: #101731;
+    color: white;
+    width: fit-content;
+    padding: 1em 4em;
+    cursor: pointer;
+}
+
+.prim-btn:hover{
+    background-color: #DA4E4E;
+    transition: 0.5s;
+}
+
+.disabled-btn{
+    color: #101731;
+    width: fit-content;
+    padding: 1em 4em;
+    cursor: pointer;
+    border: 1px solid #101731;
+}

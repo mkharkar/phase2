@@ -27,6 +27,8 @@
     
     <!-- Custom styles for this template -->
     <link href="../css/sidebars.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/button.css" rel="stylesheet">
   </head>
   <body>
     
@@ -39,8 +41,7 @@
     
     
     <a href="../index.html" class="d-flex align-items-center text-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-    
-      <h1>Your Logo here</h1>
+      <img src="../assets/mini_logo.png" class="logo">
     </a>
     
     <ul class="list-unstyled ps-0">
@@ -66,7 +67,7 @@
         <div class="collapse show" id="components-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="component1.html" class="link-dark d-inline-flex text-decoration-none rounded">Navbar</a></li>
-            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Component-2</a></li>
+            <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Buttons</a></li>
             <li><a href="component3.html" class="link-dark d-inline-flex text-decoration-none rounded">Component-3</a></li>
           </ul>
         </div>
@@ -92,8 +93,61 @@
       <div class = "container-fluid overflow-auto">
           <div class = "row p-5">
             <div id="content">
-              <h2>Component 2 (e.g. Buttons)</h2>
-              <p>See posted student examples. Make sure this works responsively. There are currently no columns in this section. (You will need to add those). </p>
+              <h2 class="fs-1 p-2 rounded">Buttons</h2>
+              <div>
+              The button component is a clickable element on a website, featuring a dark blue color by default and transitioning to a pinkish-red hue when hovered over, serving as a visual cue for interaction.
+              </div>
+              <h3>Accessibility</h3>
+              Button components should meet accessibility standards by ensuring sufficient color contrast for readability and providing focus indication. Clear labels enhance accessibility for users with disabilities.
+              <h3>Details of Use</h3>
+              Buttons are employed for initiating actions such as submitting forms, navigating to different pages, or triggering specific functions. The color change on hover enhances visual feedback, improving the user experience and guiding interaction.
+              <h3>Example</h3>
+              <h4>Primary Button</h4>
+              <div class="prim-btn rounded">
+                Button
+              </div>
+              <h4>Disabled Button</h4>
+              <div class="disabled-btn rounded">
+                Button
+              </div>
+
+    <h3>HTML</h3>
+        <div class="col code-background ">
+    <pre class="language-html"><code>
+              &lt;div class=&Prime;prim-btn rounded&Prime;&gt;
+                Button
+              &lt;/div&gt;
+              &lt;div class=&Prime;disabled-btn rounded&Prime;&gt;
+                Button
+              &lt;/div&gt;
+      </code>
+      </pre><!-- Code example -->
+            </div><!-- Row  -->
+    <h3>CSS</h3>
+        <div class="col code-background ">
+    <pre class="language-css"><code>
+        .prim-btn{
+            background-color: #101731;
+            color: white;
+            width: fit-content;
+            padding: 1em 4em;
+            cursor: pointer;
+        }
+
+        .prim-btn:hover{
+            background-color: #DA4E4E;
+            transition: 0.5s;
+        }
+
+        .disabled-btn{
+            color: #101731;
+            width: fit-content;
+            padding: 1em 4em;
+            cursor: pointer;
+            border: 1px solid #101731;
+        }
+      </code>
+      </pre><!-- Code example -->
 
             </div><!-- Row  -->
         </div><!-- Container -->
